@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="utils/style/main.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpeg" href="img/xl.jpeg">
+  <link rel="shortcut icon" type="image/jpeg" href="utils/img/favicon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a706e65759.js" crossorigin="anonymous"></script>
+  <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css”>
+
+ 
+
+  <title>Xavier Legall | Book</title>
+</head>
+<body>
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+  <div id="Nom" class="Nom">
+    
+    <nav class="zou" id="desktop-only">
+      <a href="index.php" id="carail"><h1><b>XAVIER LEGALL</b></h1></a>
+      <p>Book Comédien.nes</p> 
+    </nav>
+    
+    <div class="navigation" id="desktop-only">
+      <nav id="navig">
+        <a href="index.php">ACCUEIL</a>
+        <a href="Biographie.php">A PROPOS</a>
+        <a href="Tarifs.php">PRESTATIONS</a>
+        <a href="Contact.php">CONTACT</a>
+        
+      </nav>
+    </div>
+    
+    <div class="titremobile" id="mobile-only">
+      <a href="index.php"></a><h1>XAVIER LEGALL</h1></a>
+      <p>Book Comédien.nes</p> 
+    </div>
+    
+    
+  </div>
+  <div class="dropdown" id="mobile-only">
+    <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.php">ACCUEIL</a>
+        <a href="Biographie.php">A PROPOS</a>
+        <a href="Tarifs.php">PRESTATIONS</a>
+        <a href="Contact.php">CONTACT</a>
+      </div>
+    </div>
+  
+
+ 
+</body>
+</html>
